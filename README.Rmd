@@ -1,0 +1,61 @@
+---
+output: github_document
+author: Hai Ngoc Vo
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  cache = TRUE,
+  comment = "#>"
+)
+```
+
+# gsovn
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of gsovn is to scrape dataset from [gso.gov.vn](https://gso.gov.vn) (Vietnam General statistic organization)
+
+## Installation
+
+You can install the development version of gsovn from [GitHub](https://github.com/vohai611/gsovn-py) with:
+
+```python
+git clone https://github.com/vohai611/gsovn-py
+cd gsovn-py
+python setup.py install
+```
+
+## Usage
+
+To view list of all dataset that available
+
+```{python}
+import gsovn 
+data = gsovn.gso_avail()
+```
+To search for term 
+
+```{python}
+data.search("y te")
+```
+
+To download selected dataset
+
+```{python}
+rs = data.search('thu nhap').head(1).get()
+rs[0]
+
+rs[1]
+```
+To download multiple dataset
+
+```{python}
+multi_df = data.search("kinh te").head(4).get(multi=True)
+multi_df
+```
+
