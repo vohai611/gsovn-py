@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: gsovn
+Version: 0.0.1
+Summary: Data from Vietnam General Statistic Organization
+Home-page: UNKNOWN
+Author: Hai Ngoc Vo
+Author-email: hai835559@gmail.com
+License: UNKNOWN
+Description: This package allow user to select and download data from https://gso.gov.vn
+Keywords: python,data scraping
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux

@@ -1,0 +1,10 @@
+README.md
+setup.py
+gsovn/__init__.py
+gsovn/gsovn.py
+gsovn/test.py
+gsovn.egg-info/PKG-INFO
+gsovn.egg-info/SOURCES.txt
+gsovn.egg-info/dependency_links.txt
+gsovn.egg-info/requires.txt
+gsovn.egg-info/top_level.txt
